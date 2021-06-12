@@ -1,0 +1,86 @@
+<section class="movie-area">
+    <div class="container">
+        <div class="movie-box">
+            <div class="row flexbox-center">
+                <div class="col-lg-5 text-lg-left text-center">
+                    <div class="movie-content">
+                        <img [src]="movie_details.Poster" alt="about" />
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="movie-content">
+                        <h2>{{movie_details.Title}}</h2>
+                        <p>{{movie_details.Genre}}</p>
+                        <ul>
+                            <li>
+                                <div class="movie-left">
+                                    Title:
+                                </div>
+                                <div class="movie-right">
+                                    {{movie_details.Title}}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="movie-left">
+                                    Year:
+                                </div>
+                                <div class="movie-right">
+                                    {{movie_details.Year}}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="movie-left">
+                                    Actors:
+                                </div>
+                                <div class="movie-right">
+                                    {{movie_details.Actors}}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="movie-left">
+                                    Director:
+                                </div>
+                                <div class="movie-right">
+                                    {{movie_details.Director}}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="movie-left">
+                                    Plot:
+                                </div>
+                                <div class="movie-right">
+                                    {{movie_details.Plot}}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="movie-left">
+                                    Language:
+                                </div>
+                                <div class="movie-right">
+                                    {{movie_details.Language}}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="movie-left">
+                                    BoxOffice:
+                                </div>
+                                <div class="movie-right">
+                                    {{movie_details.BoxOffice}}
+                                </div>
+                            </li>
+                            <li>
+                                <div class="movie-left">
+                                    Awards:
+                                </div>
+                                <div class="movie-right">
+                                    {{movie_details.Awards}}
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,31 @@
+<section class="movie-area pt-60">
+    <div class="container">
+        <div class="row flexbox-center">
+            <div class="col-lg-12 text-center text-lg-left">
+                <div class="section-title">
+                    <h1><i class="icofont icofont-movie"></i> Top Movies</h1>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row movie-item">
+            <div class="col-lg-3 col-md-4 col-sm-6 soon released" *ngFor="let movie of moviesList" [routerLink]="['/movie-details', movie.imdbID]">
+                <div class="single-movie">
+                    <div class="single-movie-img">
+                        <img [src]="movie.Poster" />
+                    </div>
+                    <div class="movie-content">
+                        <h4>{{movie.Title}}</h4>
+                        <div class="review">
+                            <div class="author-review">
+                                <span>{{movie.Genre}}</span>
+                            </div>
+                            <h4>{{movie.Year}}</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
